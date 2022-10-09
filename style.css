@@ -1,0 +1,93 @@
+body {
+    font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: #333 url(./images/chess.jpg) no-repeat center center / cover;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+h1, h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ccc;
+    margin-top: 3rem;
+}
+
+.blink {
+    height: .6rem;
+    width: .2rem;
+    border-right: 0.2rem solid #fff;
+    animation: blink .7s infinite;
+    background-color: white;
+}
+
+@keyframes blink {
+    0% {
+        border-right: .2rem solid #fff;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0 1rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
